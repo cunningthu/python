@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Function that counts incrementing by 1
+      let counter = 0;
+
+      function count(){
+        counter++;
+        document.querySelector('#counter').innerHTML = counter;
+      }
+
+    </script>
+    <title>My Website</title>
+  </head>
+  <body>
+      <h1 id="counter">0</h1>
+      <button onclick="count()">Click Here!</button>
+  </body>
+</html>
