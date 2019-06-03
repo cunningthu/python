@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Mukbang
+{% endblock %}
+
+{% block heading %}
+Mukbang
+{% endblock %}
+
+{% block bodying %}
+<section class="case-vid">
+  <div class="wrapper">
+    <h2>HongSound</h2>
+    <video id="video" src="{{ url_for('static', filename='video/hongsound.mp4')}}" poster="{{ url_for('static', filename='images/hongsound.png') }}" controls></video>
+    <br>
+    <article>
+      <h3 class="video-h3">rec | video</h3>
+      <p class="video-p">Mukbangs are my favorite thing to watch, expecially when I'm trying to get lean for an upcoming convention. The sounds are so satisfying and it all really depends on the content creater as well. My top mukbang creators are
+        HongSound, Nado, and ocassionally Togimochi Korea, because they all look like they really enjoy what they eat. The #1 food that I love the most is korean chicken wings, please enjoy this video of HongSound eating delicious crispy korean fried
+        chicken!</p>
+    </article>
+  </div>
+  <br>
+</section>
+{% endblock %}

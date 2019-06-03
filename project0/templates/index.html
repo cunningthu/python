@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+CubChow
+{% endblock %}
+
+{% block heading %}
+My Favorite Foods
+{% endblock %}
+
+{% block bodying %}
+<a href="{{ url_for('about') }}"><img src="{{ url_for('static', filename='images/pho.jpg') }}" class="d-block w-100" alt="About Me"></a>
+
+<a href="{{ url_for('cosplay') }}"><img src="{{ url_for('static', filename='images/sushi.jpg') }}" class="d-block w-100" alt="Cosplay"></a>
+
+<a href="{{ url_for('mukbang') }}"><img src="{{ url_for('static', filename='images/chicken.jpg') }}" class="d-block w-100" alt="Mukbang"></a>
+<br><br>
+{% endblock %}
